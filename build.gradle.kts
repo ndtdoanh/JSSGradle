@@ -3,6 +3,7 @@ plugins {
 	id("org.springframework.boot") version "3.2.4"
 	id("io.spring.dependency-management") version "1.1.4"
 	id("io.freefair.lombok") version "8.6"
+	id("com.diffplug.spotless") version "6.22.0"
 }
 
 group = "com.ndtdoanh"
@@ -34,4 +35,19 @@ dependencies {
 
 tasks.withType<Test> {
 	useJUnitPlatform()
+}
+
+spotless {
+	java {
+		target("src/**/*.java")
+		googleJavaFormat("1.15.0")
+	}
+	kotlin {
+		target("src/**/*.kt")
+		ktlint()
+	}
+	format("misc") {
+		target("**/*.md", "**/*.yaml", "**/*.yml")
+		prettier().config(mapOf("parser" to "markdown"))
+	}
 }

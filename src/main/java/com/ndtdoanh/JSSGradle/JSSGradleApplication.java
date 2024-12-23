@@ -6,8 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class JSSGradleApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(JSSGradleApplication.class, args);
-	}
-
+  public static void main(String[] args) {
+    SpringApplication.run(JSSGradleApplication.class, args);
+  }
 }
