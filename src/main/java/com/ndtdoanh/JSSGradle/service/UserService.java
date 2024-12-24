@@ -1,7 +1,6 @@
 package com.ndtdoanh.JSSGradle.service;
 
 import com.ndtdoanh.JSSGradle.domain.User;
-import com.ndtdoanh.JSSGradle.domain.dto.Meta;
 import com.ndtdoanh.JSSGradle.domain.dto.ResCreateUserDTO;
 import com.ndtdoanh.JSSGradle.domain.dto.ResUpdateUserDTO;
 import com.ndtdoanh.JSSGradle.domain.dto.ResUserDTO;
@@ -42,7 +41,7 @@ public class UserService {
   public ResultPaginationDTO fetchAllUser(Specification<User> spec, Pageable pageable) {
     Page<User> pageUser = this.userRepository.findAll(spec, pageable);
     ResultPaginationDTO rs = new ResultPaginationDTO();
-    Meta mt = new Meta();
+    ResultPaginationDTO.Meta mt = new ResultPaginationDTO.Meta();
 
     mt.setPage(pageable.getPageNumber() + 1);
     mt.setPageSize(pageable.getPageSize());

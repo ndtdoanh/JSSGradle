@@ -1,7 +1,6 @@
 package com.ndtdoanh.JSSGradle.service;
 
 import com.ndtdoanh.JSSGradle.domain.Company;
-import com.ndtdoanh.JSSGradle.domain.dto.Meta;
 import com.ndtdoanh.JSSGradle.domain.dto.ResultPaginationDTO;
 import com.ndtdoanh.JSSGradle.repository.CompanyRepository;
 import java.util.Optional;
@@ -25,7 +24,7 @@ public class CompanyService {
   public ResultPaginationDTO handleGetCompany(Specification<Company> spec, Pageable pageable) {
     Page<Company> pageCompany = this.companyRepository.findAll(spec, pageable);
     ResultPaginationDTO rs = new ResultPaginationDTO();
-    Meta mt = new Meta();
+    ResultPaginationDTO.Meta mt = new ResultPaginationDTO.Meta();
 
     mt.setPage(pageable.getPageNumber() + 1);
     mt.setPageSize(pageable.getPageSize());
