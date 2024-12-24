@@ -6,6 +6,7 @@ import com.ndtdoanh.JSSGradle.service.CompanyService;
 import com.ndtdoanh.JSSGradle.util.annotation.ApiMessage;
 import com.turkraft.springfilter.boot.Filter;
 import jakarta.validation.Valid;
+import java.util.Optional;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.http.HttpStatus;
@@ -18,8 +19,6 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/v1")

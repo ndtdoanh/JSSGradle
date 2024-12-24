@@ -24,7 +24,10 @@ public class JobService {
   private final SkillRepository skillRepository;
   private final CompanyRepository companyRepository;
 
-  public JobService(JobRepository jobRepository, SkillRepository skillRepository, CompanyRepository companyRepository) {
+  public JobService(
+      JobRepository jobRepository,
+      SkillRepository skillRepository,
+      CompanyRepository companyRepository) {
     this.jobRepository = jobRepository;
     this.skillRepository = skillRepository;
     this.companyRepository = companyRepository;
