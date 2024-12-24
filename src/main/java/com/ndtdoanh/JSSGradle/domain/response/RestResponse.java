@@ -1,4 +1,4 @@
-package com.ndtdoanh.JSSGradle.domain;
+package com.ndtdoanh.JSSGradle.domain.response;
 
 public class RestResponse<T> {
   private int statusCode;

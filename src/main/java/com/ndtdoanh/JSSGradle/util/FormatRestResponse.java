@@ -1,6 +1,6 @@
 package com.ndtdoanh.JSSGradle.util;
 
-import com.ndtdoanh.JSSGradle.domain.RestResponse;
+import com.ndtdoanh.JSSGradle.domain.response.RestResponse;
 import com.ndtdoanh.JSSGradle.util.annotation.ApiMessage;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.core.MethodParameter;

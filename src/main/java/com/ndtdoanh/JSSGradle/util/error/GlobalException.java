@@ -1,6 +1,6 @@
 package com.ndtdoanh.JSSGradle.util.error;
 
-import com.ndtdoanh.JSSGradle.domain.RestResponse;
+import com.ndtdoanh.JSSGradle.domain.response.RestResponse;
 import java.util.List;
 import java.util.stream.Collectors;
 import org.springframework.http.HttpStatus;

@@ -1,7 +1,7 @@
 package com.ndtdoanh.JSSGradle.config;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.ndtdoanh.JSSGradle.domain.RestResponse;
+import com.ndtdoanh.JSSGradle.domain.response.RestResponse;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
