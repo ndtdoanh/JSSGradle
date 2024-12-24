@@ -2,7 +2,7 @@ package com.ndtdoanh.JSSGradle.domain.dto;
 
 import jakarta.validation.constraints.NotBlank;
 
-public class LoginDTO {
+public class ReqLoginDTO {
   @NotBlank(message = "username khong duoc de trong")
   private String username;
 

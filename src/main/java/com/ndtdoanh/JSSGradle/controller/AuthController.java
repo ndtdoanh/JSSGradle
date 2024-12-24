@@ -1,7 +1,7 @@
 package com.ndtdoanh.JSSGradle.controller;
 
 import com.ndtdoanh.JSSGradle.domain.User;
-import com.ndtdoanh.JSSGradle.domain.dto.LoginDTO;
+import com.ndtdoanh.JSSGradle.domain.dto.ReqLoginDTO;
 import com.ndtdoanh.JSSGradle.domain.dto.ResLoginDTO;
 import com.ndtdoanh.JSSGradle.service.UserService;
 import com.ndtdoanh.JSSGradle.util.SecurityUtil;
@@ -44,7 +44,7 @@ public class AuthController {
   }
 
   @PostMapping("/auth/login")
-  public ResponseEntity<ResLoginDTO> login(@Valid @RequestBody LoginDTO loginDto) {
+  public ResponseEntity<ResLoginDTO> login(@Valid @RequestBody ReqLoginDTO loginDto) {
     // Nạp input gồm username/password vào Security
     UsernamePasswordAuthenticationToken authenticationToken =
         new UsernamePasswordAuthenticationToken(loginDto.getUsername(), loginDto.getPassword());
