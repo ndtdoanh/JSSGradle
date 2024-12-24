@@ -1,8 +1,7 @@
 package com.ndtdoanh.JSSGradle.config;
 
-import java.util.Collections;
-
 import com.ndtdoanh.JSSGradle.service.UserService;
+import java.util.Collections;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
