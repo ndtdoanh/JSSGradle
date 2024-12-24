@@ -1,4 +1,4 @@
-package com.ndtdoanh.JSSGradle.domain.dto;
+package com.ndtdoanh.JSSGradle.domain.request;
 
 import jakarta.validation.constraints.NotBlank;
 
