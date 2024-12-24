@@ -1,7 +1,7 @@
 package com.ndtdoanh.JSSGradle.service;
 
 import com.ndtdoanh.JSSGradle.domain.Company;
-import com.ndtdoanh.JSSGradle.domain.dto.ResultPaginationDTO;
+import com.ndtdoanh.JSSGradle.domain.response.ResultPaginationDTO;
 import com.ndtdoanh.JSSGradle.repository.CompanyRepository;
 import java.util.Optional;
 import org.springframework.data.domain.Page;

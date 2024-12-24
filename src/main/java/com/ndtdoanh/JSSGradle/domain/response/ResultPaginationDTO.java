@@ -1,4 +1,4 @@
-package com.ndtdoanh.JSSGradle.domain.dto;
+package com.ndtdoanh.JSSGradle.domain.response;
 
 import lombok.Getter;
 import lombok.Setter;

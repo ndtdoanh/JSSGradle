@@ -1,7 +1,7 @@
 package com.ndtdoanh.JSSGradle.controller;
 
 import com.ndtdoanh.JSSGradle.domain.Company;
-import com.ndtdoanh.JSSGradle.domain.dto.ResultPaginationDTO;
+import com.ndtdoanh.JSSGradle.domain.response.ResultPaginationDTO;
 import com.ndtdoanh.JSSGradle.service.CompanyService;
 import com.ndtdoanh.JSSGradle.util.annotation.ApiMessage;
 import com.turkraft.springfilter.boot.Filter;

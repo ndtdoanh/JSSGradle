@@ -2,7 +2,7 @@ package com.ndtdoanh.JSSGradle.controller;
 
 import com.ndtdoanh.JSSGradle.domain.User;
 import com.ndtdoanh.JSSGradle.domain.request.ReqLoginDTO;
-import com.ndtdoanh.JSSGradle.domain.dto.ResLoginDTO;
+import com.ndtdoanh.JSSGradle.domain.response.ResLoginDTO;
 import com.ndtdoanh.JSSGradle.service.UserService;
 import com.ndtdoanh.JSSGradle.util.SecurityUtil;
 import com.ndtdoanh.JSSGradle.util.annotation.ApiMessage;

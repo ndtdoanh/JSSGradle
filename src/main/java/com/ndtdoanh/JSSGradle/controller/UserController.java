@@ -1,10 +1,10 @@
 package com.ndtdoanh.JSSGradle.controller;
 
 import com.ndtdoanh.JSSGradle.domain.User;
-import com.ndtdoanh.JSSGradle.domain.dto.ResCreateUserDTO;
-import com.ndtdoanh.JSSGradle.domain.dto.ResUpdateUserDTO;
-import com.ndtdoanh.JSSGradle.domain.dto.ResUserDTO;
-import com.ndtdoanh.JSSGradle.domain.dto.ResultPaginationDTO;
+import com.ndtdoanh.JSSGradle.domain.response.ResCreateUserDTO;
+import com.ndtdoanh.JSSGradle.domain.response.ResUpdateUserDTO;
+import com.ndtdoanh.JSSGradle.domain.response.ResUserDTO;
+import com.ndtdoanh.JSSGradle.domain.response.ResultPaginationDTO;
 import com.ndtdoanh.JSSGradle.service.UserService;
 import com.ndtdoanh.JSSGradle.util.annotation.ApiMessage;
 import com.ndtdoanh.JSSGradle.util.error.IdInvalidException;

@@ -1,6 +1,6 @@
 package com.ndtdoanh.JSSGradle.util;
 
-import com.ndtdoanh.JSSGradle.domain.dto.ResLoginDTO;
+import com.ndtdoanh.JSSGradle.domain.response.ResLoginDTO;
 import com.nimbusds.jose.util.Base64;
 import java.time.Instant;
 import java.time.temporal.ChronoUnit;
