@@ -22,6 +22,8 @@ public class EmailController {
 
   @GetMapping("/email")
   @ApiMessage("Send simple email")
+  //  @Scheduled(cron = "*/30 * * * * *")
+  //  @Transactional
   public String sendSimpleEmail() {
     //        this.emailService.sendSimpleEmail();
     //        this.emailService.sendEmailSync("ndtdk2@gmail.com", "test send email",

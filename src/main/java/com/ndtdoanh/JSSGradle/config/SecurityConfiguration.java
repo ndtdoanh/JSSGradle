@@ -50,7 +50,10 @@ public class SecurityConfiguration {
       "/storage/**",
       "/api/v1/email/**",
       "/api/v1/companies/**",
-      "/api/v1/jobs/**"
+      "/api/v1/jobs/**",
+      "/v3/api-docs/**",
+      "/swagger-ui/**",
+      "/swagger-ui.html"
     };
 
     http.csrf(c -> c.disable())
@@ -60,11 +63,11 @@ public class SecurityConfiguration {
                 authz
                     .requestMatchers(whiteList)
                     .permitAll()
-                    .requestMatchers(HttpMethod.GET, "/api/v1/companies")
+                    .requestMatchers(HttpMethod.GET, "/api/v1/companies/**")
                     .permitAll()
-                    .requestMatchers(HttpMethod.GET, "/api/v1/jobs")
+                    .requestMatchers(HttpMethod.GET, "/api/v1/jobs/**")
                     .permitAll()
-                    .requestMatchers(HttpMethod.GET, "/api/v1/skills")
+                    .requestMatchers(HttpMethod.GET, "/api/v1/skills/**")
                     .permitAll()
                     .anyRequest()
                     .authenticated())
